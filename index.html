@@ -11,12 +11,14 @@
 
     <title>DelAI Studio - Solusi AI untuk Bisnis</title>
 
+    <meta name="theme-color" content="#5b4bdb">
+
     <!-- Google Fonts diperbolehkan karena bukan CSS framework -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet"
     >
 
@@ -26,12 +28,17 @@
 
 <body>
 
+    <!-- Skip link untuk aksesibilitas keyboard -->
+    <a href="#konten-utama" class="skip-link">
+        Lewati ke konten utama
+    </a>
+
     <!-- ================= HEADER & NAVBAR ================= -->
     <header class="site-header">
         <div class="container navbar">
 
             <a href="index.html" class="brand">
-                <span class="brand-icon">D</span>
+                <span class="brand-icon" aria-hidden="true">D</span>
                 <span>DelAI Studio</span>
             </a>
 
@@ -67,7 +74,7 @@
     </header>
 
 
-    <main>
+    <main id="konten-utama">
 
         <!-- ================= HERO ================= -->
         <section id="beranda" class="hero">
@@ -167,7 +174,7 @@
                     <!-- Service 1 -->
                     <article class="service-card">
 
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             AI
                         </div>
 
@@ -181,7 +188,7 @@
                         </p>
 
                         <a href="#kontak" class="service-link">
-                            Konsultasikan →
+                            Konsultasikan <span aria-hidden="true">&rarr;</span>
                         </a>
 
                     </article>
@@ -190,7 +197,7 @@
                     <!-- Service 2 -->
                     <article class="service-card">
 
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             ⚙
                         </div>
 
@@ -204,7 +211,7 @@
                         </p>
 
                         <a href="#kontak" class="service-link">
-                            Konsultasikan →
+                            Konsultasikan <span aria-hidden="true">&rarr;</span>
                         </a>
 
                     </article>
@@ -213,7 +220,7 @@
                     <!-- Service 3 -->
                     <article class="service-card">
 
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             CV
                         </div>
 
@@ -227,7 +234,7 @@
                         </p>
 
                         <a href="#kontak" class="service-link">
-                            Konsultasikan →
+                            Konsultasikan <span aria-hidden="true">&rarr;</span>
                         </a>
 
                     </article>
@@ -236,7 +243,7 @@
                     <!-- Service 4 -->
                     <article class="service-card">
 
-                        <div class="service-icon">
+                        <div class="service-icon" aria-hidden="true">
                             DB
                         </div>
 
@@ -250,7 +257,7 @@
                         </p>
 
                         <a href="#kontak" class="service-link">
-                            Konsultasikan →
+                            Konsultasikan <span aria-hidden="true">&rarr;</span>
                         </a>
 
                     </article>
@@ -387,7 +394,7 @@
                 </div>
 
 
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm" aria-label="Formulir kontak">
 
                     <div class="form-group">
                         <label for="nama">
@@ -398,6 +405,7 @@
                             type="text"
                             id="nama"
                             name="nama"
+                            autocomplete="name"
                             placeholder="Masukkan nama Anda"
                             required
                         >
@@ -413,6 +421,7 @@
                             type="email"
                             id="email"
                             name="email"
+                            autocomplete="email"
                             placeholder="nama@email.com"
                             required
                         >
@@ -441,6 +450,13 @@
                         Kirim Pesan
                     </button>
 
+                    <p
+                        id="formStatus"
+                        class="form-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
                 </form>
 
             </div>
@@ -457,7 +473,7 @@
 
             <div>
                 <a href="index.html" class="brand footer-brand">
-                    <span class="brand-icon">D</span>
+                    <span class="brand-icon" aria-hidden="true">D</span>
                     <span>DelAI Studio</span>
                 </a>
 
@@ -495,6 +511,9 @@
         </div>
 
     </footer>
+
+    <!-- Vanilla JS untuk interaksi form kontak (bukan framework) -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>

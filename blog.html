@@ -15,6 +15,11 @@
 
     <title>DelAI Insights - Blog</title>
 
+    <!-- Preconnect ke CDN untuk mempercepat loading -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <meta name="theme-color" content="#5b4bdb">
+
     <!-- Bootstrap 5 -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -26,10 +31,51 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     >
+
+    <!-- Selaraskan warna brand Bootstrap dengan warna brand utama (ungu) -->
+    <style>
+        :root {
+            --bs-primary: #5b4bdb;
+            --bs-primary-rgb: 91, 75, 219;
+            --bs-link-color: #5b4bdb;
+            --bs-link-color-rgb: 91, 75, 219;
+            --bs-link-hover-color: #4638b8;
+            --bs-link-hover-color-rgb: 70, 56, 184;
+        }
+
+        .btn-primary {
+            --bs-btn-bg: #5b4bdb;
+            --bs-btn-border-color: #5b4bdb;
+            --bs-btn-hover-bg: #4638b8;
+            --bs-btn-hover-border-color: #4638b8;
+            --bs-btn-active-bg: #4638b8;
+            --bs-btn-active-border-color: #4638b8;
+        }
+
+        .btn-outline-primary {
+            --bs-btn-color: #5b4bdb;
+            --bs-btn-border-color: #5b4bdb;
+            --bs-btn-hover-bg: #5b4bdb;
+            --bs-btn-hover-border-color: #5b4bdb;
+        }
+
+        .text-bg-primary {
+            background-color: #5b4bdb !important;
+        }
+
+        .bg-primary {
+            background-color: #5b4bdb !important;
+        }
+    </style>
 </head>
 
 
 <body class="bg-light">
+
+    <!-- Skip link untuk aksesibilitas keyboard -->
+    <a href="#konten-utama" class="visually-hidden-focusable">
+        Lewati ke konten utama
+    </a>
 
     <!-- ================= NAVBAR ================= -->
 
@@ -42,7 +88,7 @@
                     class="navbar-brand fw-bold"
                     href="index.html"
                 >
-                    <i class="bi bi-cpu"></i>
+                    <i class="bi bi-cpu" aria-hidden="true"></i>
                     DelAI Studio
                 </a>
 
@@ -78,8 +124,36 @@
 
                         <li class="nav-item">
                             <a
+                                class="nav-link"
+                                href="index.html#layanan"
+                            >
+                                Layanan
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="index.html#tentang"
+                            >
+                                Tentang
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="index.html#kontak"
+                            >
+                                Kontak
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
                                 class="nav-link active"
                                 href="blog.html"
+                                aria-current="page"
                             >
                                 Blog
                             </a>
@@ -104,7 +178,7 @@
     </header>
 
 
-    <main>
+    <main id="konten-utama">
 
         <!-- ================= BLOG HEADER ================= -->
 
@@ -113,7 +187,7 @@
             <div class="container text-center">
 
                 <span class="badge text-bg-primary mb-3">
-                    <i class="bi bi-stars"></i>
+                    <i class="bi bi-stars" aria-hidden="true"></i>
                     DelAI Insights
                 </span>
 
@@ -121,7 +195,7 @@
                     Insight Seputar Artificial Intelligence
                 </h1>
 
-                <p class="lead text-secondary mx-auto mt-3"
+                <p class="lead text-secondary-emphasis mx-auto mt-3"
                    style="max-width: 700px;">
                     Membaca dan memahami perkembangan AI agar teknologi
                     dapat dimanfaatkan secara bijak dalam kehidupan
@@ -148,9 +222,13 @@
                         <article class="card h-100 shadow-sm border-0">
 
                             <img
-                                src="assets/img/generative-ai.jpg"
+                                src="assets/img/cover-generative-ai.svg"
                                 class="card-img-top"
                                 alt="Ilustrasi Generative AI"
+                                width="800"
+                                height="200"
+                                loading="lazy"
+                                decoding="async"
                                 style="height: 200px; object-fit: cover;"
                             >
 
@@ -159,7 +237,7 @@
                                 <div class="mb-3">
 
                                     <span class="badge text-bg-primary">
-                                        <i class="bi bi-robot"></i>
+                                        <i class="bi bi-robot" aria-hidden="true"></i>
                                         Generative AI
                                     </span>
 
@@ -176,7 +254,7 @@
                                 </h2>
 
 
-                                <p class="text-secondary small">
+                                <p class="text-secondary-emphasis small">
                                     Memahami konsep generative AI dan
                                     bagaimana teknologi ini dapat
                                     menghasilkan berbagai jenis konten.
@@ -187,20 +265,20 @@
 
                                     <hr>
 
-                                    <div class="small text-secondary">
+                                    <div class="small text-secondary-emphasis">
 
                                         <div class="mb-1">
-                                            <i class="bi bi-person"></i>
+                                            <i class="bi bi-person" aria-hidden="true"></i>
                                             Karina Putri
                                         </div>
 
                                         <div class="mb-1">
-                                            <i class="bi bi-calendar"></i>
+                                            <i class="bi bi-calendar" aria-hidden="true"></i>
                                             17 September 2026
                                         </div>
 
                                         <div>
-                                            <i class="bi bi-clock"></i>
+                                            <i class="bi bi-clock" aria-hidden="true"></i>
                                             5 menit
                                         </div>
 
@@ -212,7 +290,7 @@
                                         class="btn btn-outline-primary btn-sm mt-3"
                                     >
                                         Baca Selengkapnya
-                                        <i class="bi bi-arrow-right"></i>
+                                        <i class="bi bi-arrow-right" aria-hidden="true"></i>
                                     </a>
 
                                 </div>
@@ -231,9 +309,13 @@
                         <article class="card h-100 shadow-sm border-0">
 
                             <img
-                                src="assets/img/ai-machine-learning.jpg"
+                                src="assets/img/cover-machine-learning.svg"
                                 class="card-img-top"
                                 alt="Ilustrasi Machine Learning"
+                                width="800"
+                                height="200"
+                                loading="lazy"
+                                decoding="async"
                                 style="height: 200px; object-fit: cover;"
                             >
 
@@ -242,7 +324,7 @@
                                 <div class="mb-3">
 
                                     <span class="badge text-bg-success">
-                                        <i class="bi bi-graph-up"></i>
+                                        <i class="bi bi-graph-up" aria-hidden="true"></i>
                                         Machine Learning
                                     </span>
 
@@ -259,7 +341,7 @@
                                 </h2>
 
 
-                                <p class="text-secondary small">
+                                <p class="text-secondary-emphasis small">
                                     Mengenal bagaimana machine learning
                                     menggunakan data untuk menemukan
                                     pola dan membuat prediksi.
@@ -270,20 +352,20 @@
 
                                     <hr>
 
-                                    <div class="small text-secondary">
+                                    <div class="small text-secondary-emphasis">
 
                                         <div class="mb-1">
-                                            <i class="bi bi-person"></i>
+                                            <i class="bi bi-person" aria-hidden="true"></i>
                                             Karina Putri
                                         </div>
 
                                         <div class="mb-1">
-                                            <i class="bi bi-calendar"></i>
+                                            <i class="bi bi-calendar" aria-hidden="true"></i>
                                             15 September 2026
                                         </div>
 
                                         <div>
-                                            <i class="bi bi-clock"></i>
+                                            <i class="bi bi-clock" aria-hidden="true"></i>
                                             6 menit
                                         </div>
 
@@ -295,7 +377,7 @@
                                         class="btn btn-outline-primary btn-sm mt-3"
                                     >
                                         Baca Selengkapnya
-                                        <i class="bi bi-arrow-right"></i>
+                                        <i class="bi bi-arrow-right" aria-hidden="true"></i>
                                     </a>
 
                                 </div>
@@ -314,9 +396,13 @@
                         <article class="card h-100 shadow-sm border-0">
 
                             <img
-                                src="assets/img/ai-ethics.jpg"
+                                src="assets/img/cover-ai-ethics.svg"
                                 class="card-img-top"
                                 alt="Ilustrasi Etika Artificial Intelligence"
+                                width="800"
+                                height="200"
+                                loading="lazy"
+                                decoding="async"
                                 style="height: 200px; object-fit: cover;"
                             >
 
@@ -325,7 +411,7 @@
                                 <div class="mb-3">
 
                                     <span class="badge text-bg-warning">
-                                        <i class="bi bi-shield-check"></i>
+                                        <i class="bi bi-shield-check" aria-hidden="true"></i>
                                         AI Ethics
                                     </span>
 
@@ -342,7 +428,7 @@
                                 </h2>
 
 
-                                <p class="text-secondary small">
+                                <p class="text-secondary-emphasis small">
                                     Mengapa pengembangan AI perlu
                                     memperhatikan privasi, keamanan,
                                     transparansi, dan dampaknya bagi pengguna.
@@ -353,20 +439,20 @@
 
                                     <hr>
 
-                                    <div class="small text-secondary">
+                                    <div class="small text-secondary-emphasis">
 
                                         <div class="mb-1">
-                                            <i class="bi bi-person"></i>
+                                            <i class="bi bi-person" aria-hidden="true"></i>
                                             Karina Putri
                                         </div>
 
                                         <div class="mb-1">
-                                            <i class="bi bi-calendar"></i>
+                                            <i class="bi bi-calendar" aria-hidden="true"></i>
                                             12 September 2026
                                         </div>
 
                                         <div>
-                                            <i class="bi bi-clock"></i>
+                                            <i class="bi bi-clock" aria-hidden="true"></i>
                                             4 menit
                                         </div>
 
@@ -378,7 +464,7 @@
                                         class="btn btn-outline-primary btn-sm mt-3"
                                     >
                                         Baca Selengkapnya
-                                        <i class="bi bi-arrow-right"></i>
+                                        <i class="bi bi-arrow-right" aria-hidden="true"></i>
                                     </a>
 
                                 </div>
@@ -397,9 +483,13 @@
                         <article class="card h-100 shadow-sm border-0">
 
                             <img
-                                src="assets/img/ai-productivity.jpg"
+                                src="assets/img/cover-ai-productivity.svg"
                                 class="card-img-top"
                                 alt="Ilustrasi AI untuk Produktivitas"
+                                width="800"
+                                height="200"
+                                loading="lazy"
+                                decoding="async"
                                 style="height: 200px; object-fit: cover;"
                             >
 
@@ -408,7 +498,7 @@
                                 <div class="mb-3">
 
                                     <span class="badge text-bg-info">
-                                        <i class="bi bi-lightning-charge"></i>
+                                        <i class="bi bi-lightning-charge" aria-hidden="true"></i>
                                         Produktivitas
                                     </span>
 
@@ -425,7 +515,7 @@
                                 </h2>
 
 
-                                <p class="text-secondary small">
+                                <p class="text-secondary-emphasis small">
                                     Contoh pemanfaatan AI untuk membantu
                                     pekerjaan, belajar, pengolahan informasi,
                                     dan aktivitas sehari-hari.
@@ -436,20 +526,20 @@
 
                                     <hr>
 
-                                    <div class="small text-secondary">
+                                    <div class="small text-secondary-emphasis">
 
                                         <div class="mb-1">
-                                            <i class="bi bi-person"></i>
+                                            <i class="bi bi-person" aria-hidden="true"></i>
                                             Karina Putri
                                         </div>
 
                                         <div class="mb-1">
-                                            <i class="bi bi-calendar"></i>
+                                            <i class="bi bi-calendar" aria-hidden="true"></i>
                                             10 September 2026
                                         </div>
 
                                         <div>
-                                            <i class="bi bi-clock"></i>
+                                            <i class="bi bi-clock" aria-hidden="true"></i>
                                             5 menit
                                         </div>
 
@@ -461,7 +551,7 @@
                                         class="btn btn-outline-primary btn-sm mt-3"
                                     >
                                         Baca Selengkapnya
-                                        <i class="bi bi-arrow-right"></i>
+                                        <i class="bi bi-arrow-right" aria-hidden="true"></i>
                                     </a>
 
                                 </div>
