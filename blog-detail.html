@@ -1,339 +1,358 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>DelAI Studio - Mengenal Generative AI</title>
+    <meta
+        name="description"
+        content="Artikel DelAI Studio mengenai Generative AI."
+    >
 
+    <title>Mengenal Generative AI - DelAI Studio</title>
 
     <!-- Bootstrap 5 -->
-
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
+        rel="stylesheet"
+    >
 
     <!-- Bootstrap Icons -->
-
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
 </head>
 
 
 <body class="bg-light">
 
-
     <!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <header>
 
-        <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
-            <a
-                class="navbar-brand fw-bold"
-                href="index.html">
+            <div class="container">
 
-                Del<span class="text-primary">AI</span> Studio
-
-            </a>
-
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarDetail">
-
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
+                <a
+                    class="navbar-brand fw-bold"
+                    href="index.html"
+                >
+                    <i class="bi bi-cpu"></i>
+                    DelAI Studio
+                </a>
 
 
-            <div
-                class="collapse navbar-collapse"
-                id="navbarDetail">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="index.html">
-
-                            <i class="bi bi-house"></i>
-                            Beranda
-
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link active"
-                            href="blog.html">
-
-                            <i class="bi bi-journal-text"></i>
-                            Blog
-
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="cv.html">
-
-                            <i class="bi bi-person-vcard"></i>
-                            CV
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </nav>
-
-
-    <!-- ================= ARTICLE ================= -->
-
-    <main class="container py-5">
-
-        <article class="bg-white rounded-4 shadow-sm overflow-hidden">
-
-
-            <!-- COVER -->
-
-            <div
-                class="bg-primary text-white text-center p-5">
-
-                <i class="bi bi-robot display-1"></i>
-
-                <h1 class="display-5 fw-bold mt-3">
-
-                    Mengenal Generative AI
-
-                </h1>
-
-                <p class="lead mb-0">
-
-                    Bagaimana AI dapat menghasilkan konten baru?
-
-                </p>
-
-            </div>
-
-
-            <!-- CONTENT -->
-
-            <div class="p-4 p-md-5">
-
-                <!-- META -->
 
                 <div
-                    class="d-flex flex-wrap gap-3 text-secondary border-bottom pb-4 mb-4">
+                    class="collapse navbar-collapse"
+                    id="mainNavbar"
+                >
 
-                    <span>
-                        <i class="bi bi-person"></i>
-                        Karina Putri
-                    </span>
+                    <ul class="navbar-nav ms-auto">
 
-                    <span>
-                        <i class="bi bi-calendar"></i>
-                        16 September 2026
-                    </span>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="index.html"
+                            >
+                                Beranda
+                            </a>
+                        </li>
 
-                    <span>
-                        <i class="bi bi-clock"></i>
-                        5 menit membaca
-                    </span>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="blog.html"
+                            >
+                                Blog
+                            </a>
+                        </li>
 
-                    <span>
-                        <i class="bi bi-tag"></i>
-                        Generative AI
-                    </span>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="cv.html"
+                            >
+                                CV
+                            </a>
+                        </li>
+
+                    </ul>
 
                 </div>
 
+            </div>
 
-                <!-- ARTICLE -->
+        </nav>
 
-                <p class="lead">
-
-                    Generative Artificial Intelligence atau Generative AI
-                    merupakan teknologi kecerdasan buatan yang dapat
-                    menghasilkan konten baru berdasarkan pola yang dipelajari
-                    dari data.
-
-                </p>
+    </header>
 
 
-                <p>
+    <main>
 
-                    Berbeda dengan sistem AI yang hanya melakukan klasifikasi
-                    atau prediksi, Generative AI dapat menghasilkan berbagai
-                    jenis konten seperti teks, gambar, audio, video, dan kode
-                    program. Teknologi ini bekerja dengan mempelajari pola
-                    dari sejumlah besar data kemudian menggunakan pola tersebut
-                    untuk menghasilkan output baru.
+        <!-- ================= ARTICLE ================= -->
 
-                </p>
+        <article class="py-5">
 
+            <div class="container">
 
-                <p>
+                <div class="row justify-content-center">
 
-                    Salah satu contoh penggunaan Generative AI adalah dalam
-                    pengembangan aplikasi chatbot. Sistem dapat memahami
-                    pertanyaan pengguna kemudian menghasilkan jawaban yang
-                    sesuai dengan konteks percakapan. Teknologi ini juga dapat
-                    membantu mahasiswa dalam proses belajar, misalnya untuk
-                    menjelaskan konsep pemrograman atau memberikan contoh kode.
+                    <div class="col-lg-9">
 
-                </p>
+                        <!-- Back Button -->
 
-
-                <blockquote class="blockquote border-start border-primary border-4 ps-4 my-4">
-
-                    <p class="mb-0">
-
-                        AI sebaiknya digunakan sebagai alat untuk membantu
-                        manusia, bukan menggantikan proses berpikir manusia.
-
-                    </p>
-
-                </blockquote>
+                        <a
+                            href="blog.html"
+                            class="btn btn-outline-secondary btn-sm mb-4"
+                        >
+                            <i class="bi bi-arrow-left"></i>
+                            Kembali ke Blog
+                        </a>
 
 
-                <p>
+                        <!-- Cover -->
 
-                    Dalam dunia bisnis, Generative AI dapat digunakan untuk
-                    membuat draft dokumen, membantu customer service,
-                    melakukan analisis informasi, dan mendukung proses
-                    kreatif. Penggunaan teknologi tersebut dapat membantu
-                    mengurangi pekerjaan berulang sehingga manusia dapat
-                    lebih fokus pada pekerjaan yang membutuhkan kreativitas
-                    dan pengambilan keputusan.
-
-                </p>
+                        <img
+                            src="assets/img/generative-ai.jpg"
+                            class="img-fluid rounded-4 shadow-sm w-100 mb-4"
+                            alt="Ilustrasi Generative AI"
+                            style="max-height: 450px; object-fit: cover;"
+                        >
 
 
-                <p>
+                        <!-- Category -->
 
-                    Meskipun memiliki banyak manfaat, penggunaan Generative AI
-                    tetap membutuhkan perhatian terhadap akurasi informasi,
-                    privasi data, keamanan, dan etika. Oleh karena itu,
-                    pengguna perlu memeriksa kembali hasil yang diberikan AI
-                    dan menggunakan teknologi tersebut secara bertanggung
-                    jawab.
+                        <span class="badge text-bg-primary mb-3">
 
-                </p>
+                            <i class="bi bi-robot"></i>
 
+                            Generative AI
 
-                <!-- TIPS -->
-
-                <h2 class="h4 fw-bold mt-5 mb-3">
-
-                    Tips Menggunakan Generative AI
-
-                </h2>
+                        </span>
 
 
-                <ul class="list-group mb-4">
+                        <!-- Title -->
 
-                    <li class="list-group-item">
+                        <h1 class="display-5 fw-bold mb-4">
 
-                        <i class="bi bi-check-circle text-success"></i>
+                            Mengenal Generative AI
 
-                        Berikan instruksi atau prompt yang jelas.
-
-                    </li>
+                        </h1>
 
 
-                    <li class="list-group-item">
+                        <!-- Meta -->
 
-                        <i class="bi bi-check-circle text-success"></i>
+                        <div class="d-flex flex-wrap gap-3 text-secondary mb-5">
 
-                        Periksa kembali informasi yang dihasilkan.
+                            <span>
+                                <i class="bi bi-person"></i>
+                                Karina Putri
+                            </span>
 
-                    </li>
+                            <span>
+                                <i class="bi bi-calendar"></i>
+                                17 September 2026
+                            </span>
 
+                            <span>
+                                <i class="bi bi-clock"></i>
+                                5 menit membaca
+                            </span>
 
-                    <li class="list-group-item">
-
-                        <i class="bi bi-check-circle text-success"></i>
-
-                        Jangan memasukkan data pribadi yang sensitif.
-
-                    </li>
-
-
-                    <li class="list-group-item">
-
-                        <i class="bi bi-check-circle text-success"></i>
-
-                        Gunakan AI sebagai alat bantu pembelajaran.
-
-                    </li>
-
-                </ul>
+                        </div>
 
 
-                <a
-                    href="blog.html"
-                    class="btn btn-primary">
+                        <!-- Article Content -->
 
-                    <i class="bi bi-arrow-left"></i>
+                        <div class="bg-white rounded-4 shadow-sm p-4 p-md-5">
 
-                    Kembali ke Blog
+                            <p class="lead">
+                                Generative AI merupakan salah satu
+                                perkembangan teknologi kecerdasan buatan
+                                yang mampu menghasilkan konten baru
+                                berdasarkan pola yang dipelajari dari data.
+                            </p>
 
-                </a>
+
+                            <p>
+                                Berbeda dengan sistem AI yang hanya
+                                melakukan klasifikasi atau prediksi,
+                                generative AI dapat menghasilkan berbagai
+                                bentuk konten seperti teks, gambar,
+                                audio, maupun kode program. Teknologi ini
+                                bekerja menggunakan model yang dilatih
+                                dengan data dalam jumlah besar sehingga
+                                dapat mengenali pola dan hubungan
+                                antar informasi.
+                            </p>
+
+
+                            <p>
+                                Dalam kehidupan sehari-hari, generative AI
+                                dapat digunakan untuk membantu menulis,
+                                membuat rangkuman, mencari ide,
+                                menerjemahkan teks, membuat ilustrasi,
+                                serta membantu proses pengembangan
+                                perangkat lunak. Bagi bisnis, teknologi
+                                tersebut dapat digunakan untuk membantu
+                                pelayanan pelanggan, pembuatan konten,
+                                dan otomatisasi pekerjaan tertentu.
+                            </p>
+
+
+                            <blockquote class="blockquote border-start border-primary border-4 ps-4 my-4">
+
+                                <p class="mb-0">
+                                    AI sebaiknya digunakan sebagai alat
+                                    bantu untuk meningkatkan kemampuan
+                                    manusia, bukan sekadar menggantikan
+                                    proses berpikir manusia.
+                                </p>
+
+                            </blockquote>
+
+
+                            <p>
+                                Walaupun memiliki banyak manfaat,
+                                penggunaan generative AI juga perlu
+                                memperhatikan akurasi informasi, privasi,
+                                hak cipta, dan keamanan data. Hasil yang
+                                diberikan oleh AI tetap perlu diperiksa
+                                oleh manusia sebelum digunakan untuk
+                                kebutuhan yang penting.
+                            </p>
+
+
+                            <p>
+                                Oleh karena itu, pemahaman mengenai cara
+                                kerja dan batasan generative AI menjadi
+                                penting. Dengan pemanfaatan yang tepat,
+                                teknologi ini dapat menjadi alat pendukung
+                                produktivitas sekaligus membuka peluang
+                                baru dalam pengembangan produk dan layanan
+                                digital.
+                            </p>
+
+
+                            <!-- Tips -->
+
+                            <div class="alert alert-primary mt-4">
+
+                                <h2 class="h5 fw-bold">
+                                    <i class="bi bi-lightbulb"></i>
+                                    Tips Menggunakan Generative AI
+                                </h2>
+
+                                <ul class="mb-0">
+
+                                    <li>
+                                        Periksa kembali informasi yang
+                                        diberikan AI.
+                                    </li>
+
+                                    <li>
+                                        Jangan memasukkan data pribadi
+                                        atau data rahasia.
+                                    </li>
+
+                                    <li>
+                                        Gunakan AI sebagai alat bantu
+                                        dalam proses berpikir.
+                                    </li>
+
+                                    <li>
+                                        Sesuaikan hasil AI dengan
+                                        kebutuhan dan konteks pengguna.
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </article>
+
+
+        <!-- ================= RELATED CTA ================= -->
+
+        <section class="pb-5">
+
+            <div class="container">
+
+                <div class="bg-primary text-white rounded-4 p-4 p-md-5 text-center">
+
+                    <h2 class="h3 fw-bold">
+                        Ingin membaca artikel AI lainnya?
+                    </h2>
+
+                    <p>
+                        Temukan artikel lain dari DelAI Insights.
+                    </p>
+
+                    <a
+                        href="blog.html"
+                        class="btn btn-light"
+                    >
+                        Lihat Semua Artikel
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
 
     <!-- ================= FOOTER ================= -->
 
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="bg-dark text-white py-4">
 
-        <p class="mb-1 fw-bold">
-            DelAI Studio
-        </p>
+        <div class="container text-center">
 
-        <p class="mb-0 text-secondary">
-            &copy; 2026 DelAI Studio. All rights reserved.
-        </p>
+            <p class="mb-0">
+                &copy; 2026 DelAI Studio.
+                Solusi AI untuk bisnis yang lebih cerdas.
+            </p>
+
+        </div>
 
     </footer>
 
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JavaScript -->
 
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
 
 </body>
-
 </html>

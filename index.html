@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="DelAI Studio - Perusahaan jasa Artificial Intelligence untuk bisnis modern.">
+    <meta
+        name="description"
+        content="DelAI Studio - Perusahaan jasa AI untuk chatbot, otomasi, computer vision, dan konsultasi data."
+    >
 
     <title>DelAI Studio - Solusi AI untuk Bisnis</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts diperbolehkan karena bukan CSS framework -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -19,43 +26,44 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ================= HEADER & NAVBAR ================= -->
     <header class="site-header">
+        <div class="container navbar">
 
-        <nav class="navbar container">
-
-            <a href="index.html" class="logo">
-                Del<span>AI</span> Studio
+            <a href="index.html" class="brand">
+                <span class="brand-icon">D</span>
+                <span>DelAI Studio</span>
             </a>
 
-            <ul class="nav-menu">
-                <li>
-                    <a href="#beranda">Beranda</a>
-                </li>
+            <nav aria-label="Navigasi utama">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#beranda">Beranda</a>
+                    </li>
 
-                <li>
-                    <a href="#layanan">Layanan</a>
-                </li>
+                    <li>
+                        <a href="#layanan">Layanan</a>
+                    </li>
 
-                <li>
-                    <a href="#tentang">Tentang</a>
-                </li>
+                    <li>
+                        <a href="#tentang">Tentang</a>
+                    </li>
 
-                <li>
-                    <a href="#kontak">Kontak</a>
-                </li>
+                    <li>
+                        <a href="#kontak">Kontak</a>
+                    </li>
 
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
 
-                <li>
-                    <a href="cv.html">CV</a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="cv.html">CV</a>
+                    </li>
+                </ul>
+            </nav>
 
-        </nav>
-
+        </div>
     </header>
 
 
@@ -63,38 +71,33 @@
 
         <!-- ================= HERO ================= -->
         <section id="beranda" class="hero">
-
             <div class="container hero-content">
 
                 <div class="hero-text">
 
-                    <span class="hero-badge">
-                        Artificial Intelligence Solutions
+                    <span class="hero-label">
+                        AI Solution for Modern Business
                     </span>
 
                     <h1>
-                        Mengubah Ide Menjadi
-                        <span>Solusi AI</span>
-                        yang Nyata
+                        Transformasi Bisnis
+                        <span>Dengan Kekuatan AI</span>
                     </h1>
 
                     <p>
-                        DelAI Studio membantu bisnis memanfaatkan teknologi
-                        Artificial Intelligence untuk meningkatkan produktivitas,
-                        mengotomatisasi pekerjaan, dan membuat keputusan
-                        berdasarkan data.
+                        DelAI Studio membantu bisnis memanfaatkan kecerdasan
+                        buatan melalui solusi chatbot, otomasi, computer vision,
+                        dan konsultasi data yang praktis dan inovatif.
                     </p>
 
                     <div class="hero-buttons">
-
-                        <a href="#kontak" class="btn btn-primary">
-                            Konsultasi Sekarang
-                        </a>
-
-                        <a href="#layanan" class="btn btn-secondary">
+                        <a href="#layanan" class="button button-primary">
                             Lihat Layanan
                         </a>
 
+                        <a href="blog.html" class="button button-secondary">
+                            Baca Blog
+                        </a>
                     </div>
 
                 </div>
@@ -107,60 +110,55 @@
                     </div>
 
                     <h2>
-                        Smart Technology
+                        Intelligent Solutions
                     </h2>
 
                     <p>
-                        AI yang dirancang untuk membantu manusia
-                        bekerja lebih cepat dan lebih cerdas.
+                        Mengubah data dan teknologi menjadi solusi
+                        yang memberikan nilai bagi bisnis.
                     </p>
 
-                    <div class="mini-stats">
+                    <div class="hero-stat">
+                        <div>
+                            <strong>AI</strong>
+                            <span>Technology</span>
+                        </div>
+
+                        <div>
+                            <strong>4+</strong>
+                            <span>Services</span>
+                        </div>
 
                         <div>
                             <strong>24/7</strong>
-                            <span>Automation</span>
+                            <span>Innovation</span>
                         </div>
-
-                        <div>
-                            <strong>AI</strong>
-                            <span>Powered</span>
-                        </div>
-
-                        <div>
-                            <strong>100%</strong>
-                            <span>Digital</span>
-                        </div>
-
                     </div>
 
                 </div>
 
             </div>
-
         </section>
 
 
         <!-- ================= LAYANAN ================= -->
-        <section id="layanan" class="section">
+        <section id="layanan" class="section services-section">
 
             <div class="container">
 
                 <div class="section-heading">
-
                     <span class="section-label">
                         Layanan Kami
                     </span>
 
                     <h2>
-                        Solusi AI untuk Kebutuhan Bisnis
+                        Solusi AI untuk Berbagai Kebutuhan
                     </h2>
 
                     <p>
-                        Kami menyediakan berbagai layanan Artificial Intelligence
-                        yang dapat disesuaikan dengan kebutuhan bisnis.
+                        Kami menyediakan layanan berbasis AI yang dapat
+                        membantu meningkatkan efisiensi dan kualitas proses bisnis.
                     </p>
-
                 </div>
 
 
@@ -170,21 +168,20 @@
                     <article class="service-card">
 
                         <div class="service-icon">
-                            💬
+                            AI
                         </div>
 
                         <h3>
-                            Chatbot & Virtual Assistant
+                            AI Chatbot
                         </h3>
 
                         <p>
-                            Membangun chatbot berbasis AI untuk membantu
-                            menjawab pertanyaan pelanggan secara otomatis
-                            selama 24 jam.
+                            Membangun chatbot cerdas untuk membantu menjawab
+                            pertanyaan pelanggan dan mendukung layanan bisnis.
                         </p>
 
-                        <a href="#kontak">
-                            Pelajari lebih lanjut →
+                        <a href="#kontak" class="service-link">
+                            Konsultasikan →
                         </a>
 
                     </article>
@@ -194,21 +191,20 @@
                     <article class="service-card">
 
                         <div class="service-icon">
-                            ⚙️
+                            ⚙
                         </div>
 
                         <h3>
-                            Automasi Bisnis
+                            AI Automation
                         </h3>
 
                         <p>
-                            Menggunakan AI untuk mengotomatisasi proses
-                            pekerjaan yang berulang sehingga menghemat
-                            waktu dan tenaga.
+                            Mengotomatisasi pekerjaan berulang sehingga
+                            proses bisnis menjadi lebih cepat dan efisien.
                         </p>
 
-                        <a href="#kontak">
-                            Pelajari lebih lanjut →
+                        <a href="#kontak" class="service-link">
+                            Konsultasikan →
                         </a>
 
                     </article>
@@ -218,7 +214,7 @@
                     <article class="service-card">
 
                         <div class="service-icon">
-                            👁️
+                            CV
                         </div>
 
                         <h3>
@@ -226,12 +222,12 @@
                         </h3>
 
                         <p>
-                            Mengembangkan sistem yang mampu menganalisis
-                            dan memahami informasi dari gambar maupun video.
+                            Mengembangkan solusi pengenalan dan analisis
+                            gambar menggunakan teknologi computer vision.
                         </p>
 
-                        <a href="#kontak">
-                            Pelajari lebih lanjut →
+                        <a href="#kontak" class="service-link">
+                            Konsultasikan →
                         </a>
 
                     </article>
@@ -241,20 +237,20 @@
                     <article class="service-card">
 
                         <div class="service-icon">
-                            📊
+                            DB
                         </div>
 
                         <h3>
-                            Analitik Prediktif
+                            Konsultasi Data
                         </h3>
 
                         <p>
-                            Membantu bisnis memahami data dan menemukan
-                            pola untuk mendukung pengambilan keputusan.
+                            Membantu bisnis memahami data dan menggunakannya
+                            sebagai dasar pengambilan keputusan.
                         </p>
 
-                        <a href="#kontak">
-                            Pelajari lebih lanjut →
+                        <a href="#kontak" class="service-link">
+                            Konsultasikan →
                         </a>
 
                     </article>
@@ -271,23 +267,6 @@
 
             <div class="container about-grid">
 
-                <div class="about-visual">
-
-                    <div class="about-box">
-
-                        <span>
-                            DELAI
-                        </span>
-
-                        <strong>
-                            AI
-                        </strong>
-
-                    </div>
-
-                </div>
-
-
                 <div class="about-content">
 
                     <span class="section-label">
@@ -295,41 +274,73 @@
                     </span>
 
                     <h2>
-                        Teknologi AI yang Berorientasi pada Manusia
+                        Teknologi AI yang Lebih Dekat dengan Bisnis
                     </h2>
 
                     <p>
                         DelAI Studio adalah perusahaan jasa teknologi yang
-                        berfokus pada pengembangan solusi Artificial Intelligence
-                        untuk membantu bisnis menyelesaikan berbagai permasalahan
-                        secara lebih efektif.
+                        berfokus pada pengembangan solusi berbasis
+                        artificial intelligence untuk membantu bisnis
+                        menghadapi kebutuhan digital.
                     </p>
 
                     <p>
-                        Kami menggabungkan teknologi AI, data, dan pengembangan
-                        perangkat lunak untuk menghasilkan solusi yang mudah
-                        digunakan dan memiliki manfaat nyata.
+                        Kami menggabungkan teknologi AI dengan pemahaman
+                        terhadap kebutuhan pengguna agar solusi yang
+                        dikembangkan dapat digunakan secara praktis.
                     </p>
 
-                    <ul class="feature-list">
+                </div>
 
-                        <li>
-                            ✓ Solusi disesuaikan dengan kebutuhan
-                        </li>
 
-                        <li>
-                            ✓ Menggunakan teknologi AI modern
-                        </li>
+                <div class="advantages">
 
-                        <li>
-                            ✓ Fokus pada efisiensi bisnis
-                        </li>
+                    <article class="advantage-item">
+                        <span class="advantage-number">01</span>
 
-                        <li>
-                            ✓ Pendekatan berbasis data
-                        </li>
+                        <div>
+                            <h3>
+                                Solusi Terarah
+                            </h3>
 
-                    </ul>
+                            <p>
+                                Setiap solusi dirancang berdasarkan
+                                kebutuhan dan permasalahan bisnis.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="advantage-item">
+                        <span class="advantage-number">02</span>
+
+                        <div>
+                            <h3>
+                                Teknologi Modern
+                            </h3>
+
+                            <p>
+                                Menggunakan pendekatan teknologi AI
+                                yang relevan dengan kebutuhan saat ini.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="advantage-item">
+                        <span class="advantage-number">03</span>
+
+                        <div>
+                            <h3>
+                                Berorientasi Pengguna
+                            </h3>
+
+                            <p>
+                                Pengalaman pengguna menjadi bagian
+                                penting dalam pengembangan solusi.
+                            </p>
+                        </div>
+                    </article>
 
                 </div>
 
@@ -341,88 +352,96 @@
         <!-- ================= KONTAK ================= -->
         <section id="kontak" class="section contact-section">
 
-            <div class="container">
+            <div class="container contact-wrapper">
 
-                <div class="contact-box">
+                <div class="contact-info">
 
-                    <div class="contact-text">
+                    <span class="section-label">
+                        Hubungi Kami
+                    </span>
 
-                        <span class="section-label">
-                            Hubungi Kami
-                        </span>
+                    <h2>
+                        Mari Bangun Solusi AI Bersama
+                    </h2>
 
-                        <h2>
-                            Mari Bangun Solusi AI Bersama
-                        </h2>
+                    <p>
+                        Punya ide atau permasalahan bisnis yang ingin
+                        diselesaikan dengan teknologi AI?
+                        Hubungi DelAI Studio untuk berdiskusi.
+                    </p>
+
+                    <div class="contact-details">
 
                         <p>
-                            Punya ide atau permasalahan yang ingin diselesaikan
-                            dengan teknologi AI? Ceritakan kepada kami.
+                            <strong>Email</strong><br>
+                            hello@delai.studio
+                        </p>
+
+                        <p>
+                            <strong>Lokasi</strong><br>
+                            Sumatera Utara, Indonesia
                         </p>
 
                     </div>
 
-
-                    <form class="contact-form">
-
-                        <div class="form-group">
-
-                            <label for="nama">
-                                Nama
-                            </label>
-
-                            <input
-                                type="text"
-                                id="nama"
-                                name="nama"
-                                placeholder="Masukkan nama"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="email">
-                                Email
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="nama@email.com"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="pesan">
-                                Pesan
-                            </label>
-
-                            <textarea
-                                id="pesan"
-                                name="pesan"
-                                rows="5"
-                                placeholder="Tuliskan kebutuhan Anda..."
-                                required
-                            ></textarea>
-
-                        </div>
-
-
-                        <button type="submit" class="btn btn-primary">
-                            Kirim Pesan
-                        </button>
-
-                    </form>
-
                 </div>
+
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+                        <label for="nama">
+                            Nama
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama Anda"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="pesan">
+                            Pesan
+                        </label>
+
+                        <textarea
+                            id="pesan"
+                            name="pesan"
+                            rows="5"
+                            placeholder="Tuliskan kebutuhan Anda..."
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="button button-primary button-full"
+                    >
+                        Kirim Pesan
+                    </button>
+
+                </form>
 
             </div>
 
@@ -432,20 +451,19 @@
 
 
     <!-- ================= FOOTER ================= -->
-    <footer class="footer">
+    <footer class="site-footer">
 
         <div class="container footer-content">
 
             <div>
-
-                <h3>
-                    DelAI Studio
-                </h3>
+                <a href="index.html" class="brand footer-brand">
+                    <span class="brand-icon">D</span>
+                    <span>DelAI Studio</span>
+                </a>
 
                 <p>
-                    Solusi Artificial Intelligence untuk bisnis modern.
+                    Solusi AI untuk bisnis yang lebih cerdas.
                 </p>
-
             </div>
 
 
@@ -468,7 +486,7 @@
         </div>
 
 
-        <div class="copyright">
+        <div class="container footer-bottom">
 
             <p>
                 &copy; 2026 DelAI Studio. All rights reserved.
