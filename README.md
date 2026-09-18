@@ -1,52 +1,66 @@
-# DelAI Studio — Website Multi-Halaman (Praktikum 2 PABWE)
+# DelAI Studio — Praktikum 2 PABWE
 
-Website multi-halaman untuk brand fiktif perusahaan jasa AI **DelAI Studio**,
-dibangun sesuai ketentuan Praktikum 2: CSS murni, Bootstrap 5, dan Tailwind CSS 4.
+Website multi-halaman perusahaan jasa AI dengan tiga pendekatan styling sesuai ketentuan praktikum: CSS murni, Bootstrap 5, dan Tailwind CSS 4.
 
 ## Struktur Proyek
 
-| File | Teknologi | Peran |
-|---|---|---|
-| `index.html` | HTML + CSS murni (`assets/css/style.css`) | Landing page |
-| `blog.html` | Bootstrap 5 + Bootstrap Icons | Daftar blog (4 artikel AI) |
-| `blog-detail.html` | Bootstrap 5 + Bootstrap Icons | Detail artikel, artikel terkait, komentar |
-| `cv.html` | Tailwind CSS 4 (Play CDN) | Curriculum Vitae |
-| `assets/css/style.css` | — | External CSS untuk landing page |
-| `assets/img/*.webp` | — | Gambar profil dan ilustrasi cover artikel blog |
-| `assets/css/style.css` | External CSS | Penyesuaian Bootstrap untuk halaman blog |
-
-Setiap halaman hanya menggunakan **satu** pendekatan styling sesuai perannya
-(separation of concern): `index.html` tidak memuat Bootstrap/Tailwind,
-`blog.html`/`blog-detail.html` tidak memuat Tailwind, dan `cv.html` tidak
-memuat Bootstrap.
-
-## Ringkasan Perbaikan
-
-- **Gambar blog yang broken diperbaiki** — path lama (`assets/img/*.jpg`)
-  tidak pernah ada filenya. Diganti dengan 4 ilustrasi WebP lokal yang terkompresi dan
-  tanpa request eksternal lengkap dengan `width`/`height`/`loading`/`decoding`
-  untuk mencegah layout shift dan mempercepat render.
-- **Kontras warna diperbaiki** untuk memenuhi WCAG AA — beberapa warna
-  (`text-slate-400` di CV, `text-secondary` & warna primary default Bootstrap
-  di halaman blog) sebelumnya berada di ambang batas atau gagal kontras.
-- **Konsistensi brand** — warna primer Bootstrap di `blog.html` &
-  `blog-detail.html` diselaraskan dengan warna brand ungu (`#5b4bdb`) yang
-  dipakai di `index.html` dan `cv.html`.
-- **Aksesibilitas keyboard & screen reader** — skip link di setiap halaman,
-  `aria-hidden` pada ikon dekoratif, `aria-current="page"` pada navigasi
-  aktif, label form yang terhubung dengan benar, dan label form yang terhubung dengan benar.
-- **Kelengkapan konten** — `blog-detail.html` kini memiliki breadcrumb,
-  bagian "Artikel Terkait", dan area komentar sederhana.
-
-## Menjalankan Secara Lokal
-
-Tidak perlu build tool. Cukup buka `index.html` langsung di browser, atau
-jalankan server statis sederhana, contoh:
-
-```bash
-python3 -m http.server 8000
+```text
+ifs24051-pabwe-p2/
+├── index.html
+├── blog.html
+├── blog-detail.html
+├── cv.html
+├── README.md
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── blog.css
+│   └── img/
+│       ├── logo.svg
+│       ├── gen-ai.webp
+│       ├── machine.webp
+│       ├── etika.webp
+│       ├── produktivitas.webp
+│       └── karina-256.webp
+└── .vscode/
+    └── settings.json
 ```
 
-lalu buka `http://localhost:8000`.
+## Pembagian Styling
 
-- Logo bersama: `assets/img/logo.svg` digunakan pada navbar seluruh halaman.
+- `index.html` menggunakan HTML + CSS murni melalui `assets/css/style.css`. Tidak menggunakan Bootstrap atau Tailwind.
+- `blog.html` dan `blog-detail.html` menggunakan Bootstrap 5 + Bootstrap Icons. Penyesuaian kecil dipisahkan ke `assets/css/blog.css`.
+- `cv.html` menggunakan Tailwind CSS 4 sebagai sistem styling utama.
+
+## Perbaikan Struktur
+
+- Folder gambar diseragamkan menjadi `assets/img/`.
+- Nama file gambar dibuat konsisten dan tanpa spasi.
+- CSS tambahan halaman blog dipindahkan dari HTML ke `assets/css/blog.css`.
+- Inline `style` pada halaman blog dan detail dihilangkan.
+- Referensi JavaScript lokal yang tidak diperlukan dihapus.
+- Gambar profil dioptimalkan dan diberi ukuran eksplisit.
+- Semantic HTML5, navigasi antar halaman, dan identitas DelAI Studio tetap dipertahankan.
+- `assets/css/style.css` (yang sebelumnya belum ada) dibuat lengkap dengan CSS
+  variables, box model, Flexbox, Grid, hover/transition, dan media query,
+  sesuai class yang dipakai `index.html`.
+- Atribut `class` ganda pada beberapa elemen `<img>`/`<p>`/`<span>` di
+  `blog.html` dan `blog-detail.html` digabung menjadi satu atribut agar valid
+  dan agar class kustom (`blog-card-image`, `article-cover`,
+  `related-card-image`, `comment-avatar`, `blog-intro`) benar-benar terpakai.
+- Logo brand (`assets/img/logo.svg`) disamakan di seluruh halaman navbar
+  (sebelumnya `blog.html` & `blog-detail.html` memakai ikon Bootstrap
+  generik `bi-cpu` sehingga identitas visual tidak konsisten dengan
+  `index.html` dan `cv.html`).
+- Warna brand disamakan di semua halaman (`#5b4bdb`): `cv.html` sebelumnya
+  memakai `theme-color` dan palet Tailwind `violet-*` yang berbeda dari
+  halaman lain. Ditambahkan kustomisasi Tailwind CSS 4 lewat `@theme`
+  (`--color-brand-*`) dan seluruh utility class diarahkan ke token
+  `brand-*` tersebut.
+
+## Halaman
+
+- `index.html` — landing page DelAI Studio.
+- `blog.html` — daftar 4 artikel AI.
+- `blog-detail.html` — detail artikel Generative AI.
+- `cv.html` — CV Karina Putri Sion.

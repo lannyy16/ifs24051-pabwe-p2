@@ -16,7 +16,7 @@
 
     <title>CV - Karina Putri Sion | DelAI Studio</title>
 
-    <meta name="theme-color" content="#4c1d95">
+    <meta name="theme-color" content="#5b4bdb">
 
     <!-- Preconnect ke CDN untuk mempercepat loading -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -24,8 +24,21 @@
     <!-- Tailwind CSS 4 Play CDN -->
     <script
         src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
-        defer
     ></script>
+
+    <!-- Tailwind CSS 4: kustomisasi token warna brand via @theme,      -->
+    <!-- diselaraskan dengan warna brand #5b4bdb pada index.html & blog -->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-brand-50: #f0eefc;
+            --color-brand-100: #e0dbf9;
+            --color-brand-200: #c2b8f3;
+            --color-brand-300: #a394ec;
+            --color-brand-600: #5b4bdb;
+            --color-brand-700: #4638b8;
+            --color-brand-950: #1c1a2e;
+        }
+    </style>
 
 </head>
 
@@ -35,7 +48,7 @@
     <!-- Skip link untuk aksesibilitas keyboard -->
     <a
         href="#konten-utama"
-        class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-violet-700 focus:shadow-lg"
+        class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-brand-700 focus:shadow-lg"
     >
         Lewati ke konten utama
     </a>
@@ -60,42 +73,42 @@
 
                 <a
                     href="index.html"
-                    class="transition hover:text-violet-300"
+                    class="transition hover:text-brand-300"
                 >
                     Beranda
                 </a>
 
                 <a
                     href="index.html#layanan"
-                    class="transition hover:text-violet-300"
+                    class="transition hover:text-brand-300"
                 >
                     Layanan
                 </a>
 
                 <a
                     href="index.html#tentang"
-                    class="transition hover:text-violet-300"
+                    class="transition hover:text-brand-300"
                 >
                     Tentang
                 </a>
 
                 <a
                     href="index.html#kontak"
-                    class="transition hover:text-violet-300"
+                    class="transition hover:text-brand-300"
                 >
                     Kontak
                 </a>
 
                 <a
                     href="blog.html"
-                    class="transition hover:text-violet-300"
+                    class="transition hover:text-brand-300"
                 >
                     Blog
                 </a>
 
                 <a
                     href="cv.html"
-                    class="font-semibold text-violet-300"
+                    class="font-semibold text-brand-300"
                     aria-current="page"
                 >
                     CV
@@ -116,7 +129,7 @@
             class="overflow-hidden rounded-3xl bg-white shadow-sm"
         >
 
-            <div class="h-32 bg-linear-to-r from-violet-700 to-indigo-600"></div>
+            <div class="h-32 bg-linear-to-r from-brand-700 to-brand-600"></div>
 
 
             <div class="-mt-16 px-5 pb-8 sm:px-8">
@@ -132,11 +145,6 @@
                         <!-- Foto Profil -->
                     <img
                         src="assets/img/karina-256.webp"
-                        srcset="assets/img/karina-256.webp 256w"
-                        sizes="128px"
-                        width="128"
-                        height="128"
-                        fetchpriority="high"
                         alt="Foto Profil Karina Putri Sion"
                         class="h-32 w-32 shrink-0 rounded-2xl border-4 border-white object-cover shadow-sm"
                     >
@@ -145,7 +153,7 @@
                         <div>
 
                             <p
-                                class="mb-1 text-sm font-semibold uppercase tracking-wider text-violet-600"
+                                class="mb-1 text-sm font-semibold uppercase tracking-wider text-brand-600"
                             >
                                 Informatics Student
                             </p>
@@ -267,7 +275,7 @@
                     <div class="mb-5">
 
                         <p
-                            class="text-sm font-bold uppercase tracking-wider text-violet-600"
+                            class="text-sm font-bold uppercase tracking-wider text-brand-600"
                         >
                             About
                         </p>
@@ -308,7 +316,7 @@
                     <div class="mb-6">
 
                         <p
-                            class="text-sm font-bold uppercase tracking-wider text-violet-600"
+                            class="text-sm font-bold uppercase tracking-wider text-brand-600"
                         >
                             Education
                         </p>
@@ -321,13 +329,13 @@
 
 
                     <div
-                        class="border-l-2 border-violet-200 pl-5"
+                        class="border-l-2 border-brand-200 pl-5"
                     >
 
                         <div class="relative">
 
                             <span
-                                class="absolute -left-7 top-1 h-3 w-3 rounded-full bg-violet-600"
+                                class="absolute -left-7 top-1 h-3 w-3 rounded-full bg-brand-600"
                             ></span>
 
 
@@ -335,7 +343,7 @@
                                 Institut Teknologi Del
                             </h3>
 
-                            <p class="mt-1 text-sm font-medium text-violet-600">
+                            <p class="mt-1 text-sm font-medium text-brand-600">
                                 Program Studi Informatika
                             </p>
 
@@ -363,7 +371,7 @@
                     <div class="mb-6">
 
                         <p
-                            class="text-sm font-bold uppercase tracking-wider text-violet-600"
+                            class="text-sm font-bold uppercase tracking-wider text-brand-600"
                         >
                             Experience
                         </p>
@@ -380,14 +388,14 @@
                         <!-- Experience 1 -->
 
                         <article
-                            class="border-l-2 border-violet-200 pl-5"
+                            class="border-l-2 border-brand-200 pl-5"
                         >
 
                             <h3 class="font-bold">
                                 Pengembangan Project FitStyle AI
                             </h3>
 
-                            <p class="mt-1 text-sm font-medium text-violet-600">
+                            <p class="mt-1 text-sm font-medium text-brand-600">
                                 AI Product Project
                             </p>
 
@@ -408,14 +416,14 @@
                         <!-- Experience 2 -->
 
                         <article
-                            class="border-l-2 border-violet-200 pl-5"
+                            class="border-l-2 border-brand-200 pl-5"
                         >
 
                             <h3 class="font-bold">
                                 Pengembangan Website DelAI Studio
                             </h3>
 
-                            <p class="mt-1 text-sm font-medium text-violet-600">
+                            <p class="mt-1 text-sm font-medium text-brand-600">
                                 Web Development Project
                             </p>
 
@@ -443,7 +451,7 @@
                     <div class="mb-6">
 
                         <p
-                            class="text-sm font-bold uppercase tracking-wider text-violet-600"
+                            class="text-sm font-bold uppercase tracking-wider text-brand-600"
                         >
                             Portfolio
                         </p>
@@ -464,7 +472,7 @@
                         >
 
                             <div
-                                class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100 font-bold text-violet-700"
+                                class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 font-bold text-brand-700"
                             >
                                 AI
                             </div>
@@ -572,7 +580,7 @@
                 <section class="rounded-2xl bg-white p-6 shadow-sm">
 
                     <p
-                        class="text-sm font-bold uppercase tracking-wider text-violet-600"
+                        class="text-sm font-bold uppercase tracking-wider text-brand-600"
                     >
                         Skills
                     </p>
@@ -585,49 +593,49 @@
                     <div class="mt-5 flex flex-wrap gap-2">
 
                         <span
-                            class="rounded-full bg-violet-100 px-3 py-2 text-sm font-medium text-violet-700"
+                            class="rounded-full bg-brand-100 px-3 py-2 text-sm font-medium text-brand-700"
                         >
                             HTML
                         </span>
 
                         <span
-                            class="rounded-full bg-violet-100 px-3 py-2 text-sm font-medium text-violet-700"
+                            class="rounded-full bg-brand-100 px-3 py-2 text-sm font-medium text-brand-700"
                         >
                             CSS
                         </span>
 
                         <span
-                            class="rounded-full bg-violet-100 px-3 py-2 text-sm font-medium text-violet-700"
+                            class="rounded-full bg-brand-100 px-3 py-2 text-sm font-medium text-brand-700"
                         >
                             Bootstrap 5
                         </span>
 
                         <span
-                            class="rounded-full bg-violet-100 px-3 py-2 text-sm font-medium text-violet-700"
+                            class="rounded-full bg-brand-100 px-3 py-2 text-sm font-medium text-brand-700"
                         >
                             Tailwind CSS
                         </span>
 
                         <span
-                            class="rounded-full bg-violet-100 px-3 py-2 text-sm font-medium text-violet-700"
+                            class="rounded-full bg-brand-100 px-3 py-2 text-sm font-medium text-brand-700"
                         >
                             Java
                         </span>
 
                         <span
-                            class="rounded-full bg-violet-100 px-3 py-2 text-sm font-medium text-violet-700"
+                            class="rounded-full bg-brand-100 px-3 py-2 text-sm font-medium text-brand-700"
                         >
                             Git
                         </span>
 
                         <span
-                            class="rounded-full bg-violet-100 px-3 py-2 text-sm font-medium text-violet-700"
+                            class="rounded-full bg-brand-100 px-3 py-2 text-sm font-medium text-brand-700"
                         >
                             SQL
                         </span>
 
                         <span
-                            class="rounded-full bg-violet-100 px-3 py-2 text-sm font-medium text-violet-700"
+                            class="rounded-full bg-brand-100 px-3 py-2 text-sm font-medium text-brand-700"
                         >
                             UI Design
                         </span>
@@ -642,7 +650,7 @@
                 <section class="rounded-2xl bg-white p-6 shadow-sm">
 
                     <p
-                        class="text-sm font-bold uppercase tracking-wider text-violet-600"
+                        class="text-sm font-bold uppercase tracking-wider text-brand-600"
                     >
                         Contact
                     </p>
@@ -701,7 +709,7 @@
 
                             <a
                                 href="https://github.com/"
-                                class="text-slate-600 underline decoration-slate-300 underline-offset-2 transition hover:text-violet-600"
+                                class="text-slate-600 underline decoration-slate-300 underline-offset-2 transition hover:text-brand-600"
                             >
                                 github.com/karinaputri
                             </a>
@@ -717,7 +725,7 @@
 
                             <a
                                 href="https://linkedin.com/"
-                                class="text-slate-600 underline decoration-slate-300 underline-offset-2 transition hover:text-violet-600"
+                                class="text-slate-600 underline decoration-slate-300 underline-offset-2 transition hover:text-brand-600"
                             >
                                 linkedin.com/in/karinaputri
                             </a>
@@ -734,7 +742,7 @@
                 <section class="rounded-2xl bg-white p-6 shadow-sm">
 
                     <p
-                        class="text-sm font-bold uppercase tracking-wider text-violet-600"
+                        class="text-sm font-bold uppercase tracking-wider text-brand-600"
                     >
                         Additional
                     </p>
@@ -747,17 +755,17 @@
                     <ul class="mt-5 space-y-3 text-sm text-slate-600">
 
                         <li class="flex gap-2">
-                            <span class="text-violet-600">✓</span>
+                            <span class="text-brand-600">✓</span>
                             Pengembangan Web
                         </li>
 
                         <li class="flex gap-2">
-                            <span class="text-violet-600">✓</span>
+                            <span class="text-brand-600">✓</span>
                             Artificial Intelligence Project
                         </li>
 
                         <li class="flex gap-2">
-                            <span class="text-violet-600">✓</span>
+                            <span class="text-brand-600">✓</span>
                             Software Engineering Project
                         </li>
 
