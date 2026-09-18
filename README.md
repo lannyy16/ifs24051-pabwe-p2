@@ -101,17 +101,17 @@ Kriteria	Bobot	Fokus Pemeriksaan
 Total bobot: 100
 ---
 10. Checklist Pengerjaan
-[ ] `index.html` — landing page, CSS murni via `assets/css/style.css`, tanpa framework
-[ ] `blog.html` — daftar minimal 4 artikel AI, Bootstrap 5 + Bootstrap Icons
-[ ] `blog-detail.html` — detail artikel, minimal 3 paragraf, Bootstrap 5 + Bootstrap Icons
-[ ] `cv.html` — CV digital, Tailwind CSS 4 sebagai sistem styling utama
-[ ] Navigasi antar halaman (Landing / Blog / CV) berfungsi di semua file
-[ ] Judul blog di `blog.html` mengarah ke `blog-detail.html`
-[ ] Nama brand/logo konsisten di seluruh halaman
-[ ] Semantic HTML5 digunakan secara konsisten
-[ ] Komentar singkat pada bagian penting kode
-[ ] Responsive di desktop dan mobile
-[ ] Tidak ada pencampuran framework antar halaman (separation of concern)
+- [x] `index.html` — landing page, CSS murni via `assets/css/style.css`, tanpa framework
+- [x] `blog.html` — daftar minimal 4 artikel AI, Bootstrap 5 + Bootstrap Icons
+- [x] `blog-detail.html` — detail artikel, minimal 3 paragraf, Bootstrap 5 + Bootstrap Icons
+- [x] `cv.html` — CV digital, Tailwind CSS 4 sebagai sistem styling utama
+- [x] Navigasi antar halaman (Landing / Blog / CV) berfungsi di semua file
+- [x] Judul blog di `blog.html` mengarah ke `blog-detail.html`
+- [x] Nama brand/logo konsisten di seluruh halaman
+- [x] Semantic HTML5 digunakan secara konsisten
+- [x] Komentar singkat pada bagian penting kode
+- [x] Responsive di desktop dan mobile
+- [x] Tidak ada pencampuran framework antar halaman (separation of concern)
 11. Catatan untuk AI Assistant
 Setiap halaman wajib satu stack styling saja, jangan bantu menambahkan Bootstrap di `index.html`/`cv.html`, atau Tailwind di `blog.html`/`blog-detail.html` — ini melanggar `best_practice` dan `separation_of_concern`.
 `index.html` tidak boleh memuat file/CDN framework CSS apa pun — hanya `assets/css/style.css`.
