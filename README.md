@@ -12,8 +12,8 @@ dibangun sesuai ketentuan Praktikum 2: CSS murni, Bootstrap 5, dan Tailwind CSS 
 | `blog-detail.html` | Bootstrap 5 + Bootstrap Icons | Detail artikel, artikel terkait, komentar |
 | `cv.html` | Tailwind CSS 4 (Play CDN) | Curriculum Vitae |
 | `assets/css/style.css` | — | External CSS untuk landing page |
-| `assets/img/*.svg` | — | Ilustrasi cover artikel blog (custom, tanpa dependensi eksternal) |
-| `assets/js/main.js` | Vanilla JS | Feedback sederhana untuk form kontak |
+| `assets/img/*.webp` | — | Gambar profil dan ilustrasi cover artikel blog |
+| `assets/css/bootstrap-custom.css` | External CSS | Penyesuaian Bootstrap untuk halaman blog |
 
 Setiap halaman hanya menggunakan **satu** pendekatan styling sesuai perannya
 (separation of concern): `index.html` tidak memuat Bootstrap/Tailwind,
@@ -23,8 +23,8 @@ memuat Bootstrap.
 ## Ringkasan Perbaikan
 
 - **Gambar blog yang broken diperbaiki** — path lama (`assets/img/*.jpg`)
-  tidak pernah ada filenya. Diganti dengan 4 ilustrasi SVG custom (ringan,
-  tanpa request eksternal) lengkap dengan `width`/`height`/`loading`/`decoding`
+  tidak pernah ada filenya. Diganti dengan 4 ilustrasi WebP lokal yang terkompresi dan
+  tanpa request eksternal lengkap dengan `width`/`height`/`loading`/`decoding`
   untuk mencegah layout shift dan mempercepat render.
 - **Kontras warna diperbaiki** untuk memenuhi WCAG AA — beberapa warna
   (`text-slate-400` di CV, `text-secondary` & warna primary default Bootstrap
@@ -34,8 +34,7 @@ memuat Bootstrap.
   dipakai di `index.html` dan `cv.html`.
 - **Aksesibilitas keyboard & screen reader** — skip link di setiap halaman,
   `aria-hidden` pada ikon dekoratif, `aria-current="page"` pada navigasi
-  aktif, label form yang terhubung dengan benar, dan status area
-  (`aria-live`) untuk feedback form kontak.
+  aktif, label form yang terhubung dengan benar, dan label form yang terhubung dengan benar.
 - **Kelengkapan konten** — `blog-detail.html` kini memiliki breadcrumb,
   bagian "Artikel Terkait", dan area komentar sederhana.
 
