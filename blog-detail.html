@@ -32,10 +32,8 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     >
 
-    <!-- Custom CSS dipisahkan dari HTML -->
-    <link rel="stylesheet" href="assets/css/bootstrap-custom.css">
-
-
+    <!-- External CSS tambahan untuk penyesuaian Bootstrap -->
+    <link rel="stylesheet" href="assets/css/blog.css">
 </head>
 
 
@@ -55,10 +53,10 @@
             <div class="container">
 
                 <a
-                    class="navbar-brand fw-bold d-inline-flex align-items-center"
+                    class="navbar-brand fw-bold"
                     href="index.html"
                 >
-                    <span class="brand-icon me-2" aria-hidden="true">D</span>
+                    <i class="bi bi-cpu" aria-hidden="true"></i>
                     DelAI Studio
                 </a>
 
@@ -174,7 +172,7 @@
 
                         <a
                             href="blog.html"
-                            class="btn btn-outline-dark btn-sm mb-4"
+                            class="btn btn-outline-secondary btn-sm mb-4"
                         >
                             <i class="bi bi-arrow-left" aria-hidden="true"></i>
                             Kembali ke Blog
@@ -185,13 +183,13 @@
 
                         <img
                             src="assets/img/gen-ai.webp"
-                                fetchpriority="high"
-                            class="img-fluid rounded-4 shadow-sm w-100 mb-4 detail-cover-img"
+                            class="img-fluid rounded-4 shadow-sm w-100 mb-4"
                             alt="Ilustrasi Generative AI"
                             width="1600"
                             height="450"
                             loading="eager"
                             decoding="async"
+                            class="img-fluid rounded-4 shadow-sm w-100 mb-4 article-cover"
                         >
 
 
@@ -361,12 +359,13 @@
                                     <article class="card h-100 shadow-sm border-0">
                                         <img
                                             src="assets/img/machine.webp"
-                                            class="card-img-top related-card-img"
+                                            class="card-img-top"
                                             alt="Ilustrasi Machine Learning"
                                             width="800"
                                             height="160"
                                             loading="lazy"
                                             decoding="async"
+                                            class="card-img-top related-card-image"
                                         >
                                         <div class="card-body">
                                             <span class="badge text-bg-success mb-2">
@@ -390,12 +389,13 @@
                                     <article class="card h-100 shadow-sm border-0">
                                         <img
                                             src="assets/img/etika.webp"
-                                            class="card-img-top related-card-img"
+                                            class="card-img-top"
                                             alt="Ilustrasi Etika Artificial Intelligence"
                                             width="800"
                                             height="160"
                                             loading="lazy"
                                             decoding="async"
+                                            class="card-img-top related-card-image"
                                         >
                                         <div class="card-body">
                                             <span class="badge text-bg-warning mb-2">
@@ -430,7 +430,8 @@
 
                             <div class="d-flex gap-3 mb-4">
                                 <span
-                                    class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white flex-shrink-0 author-avatar"
+                                    class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white flex-shrink-0"
+                                    class="comment-avatar"
                                     aria-hidden="true"
                                 >
                                     <i class="bi bi-person-fill"></i>
@@ -501,42 +502,12 @@
 
     <footer class="bg-dark text-white py-4">
 
-        <div class="container">
+        <div class="container text-center">
 
-            <div
-                class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
-            >
-
-                <p class="mb-0">
-                    &copy; 2026 DelAI Studio.
-                </p>
-
-                <div class="d-flex gap-3">
-
-                    <a
-                        href="index.html"
-                        class="text-white text-decoration-none"
-                    >
-                        Beranda
-                    </a>
-
-                    <a
-                        href="blog.html"
-                        class="text-white text-decoration-none"
-                    >
-                        Blog
-                    </a>
-
-                    <a
-                        href="cv.html"
-                        class="text-white text-decoration-none"
-                    >
-                        CV
-                    </a>
-
-                </div>
-
-            </div>
+            <p class="mb-0">
+                &copy; 2026 DelAI Studio.
+                Solusi AI untuk bisnis yang lebih cerdas.
+            </p>
 
         </div>
 
